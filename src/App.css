@@ -35,7 +35,7 @@ body {
 /* Small Devices (Tablets, >= 576px) */
 @media (min-width: 576px) {
   body {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     font-size: 18px;
   }
@@ -44,7 +44,7 @@ body {
 /* Medium Devices (Desktops, >= 768px) */
 @media (min-width: 768px) {
   body {
-    width: 85%;
+    width: 95%;
     margin: 0 auto;
     font-size: 20px;
   }

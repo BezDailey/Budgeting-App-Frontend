@@ -12,20 +12,22 @@ const Header = ({ }) => {
 
   return (
     <header className={styles.header}>
-      <div className={styles.userName}>
-        <h1>Hi, Jabez</h1>
-        <button className={styles.hamburgerIcon} onClick={toggleMenu}>
-          <img src={hamburgerIcon} alt="Menu" width={24} height={24} />
-        </button>
-      </div>
-      <div className={styles.totals}>
-        <div className={styles.total}>
-          <h2>Total Planned Expenses</h2>
-          <p>$1,000</p>
+      <div className={styles.headerInfo}>
+        <div className={styles.userName}>
+          <h1>Hi, Jabez</h1>
+          <button className={styles.hamburgerIcon} onClick={toggleMenu}>
+            <img src={hamburgerIcon} alt="Menu" width={24} height={24} />
+          </button>
         </div>
-        <div className={styles.total}>
-          <h2>Total Remaining Expenses</h2>
-          <p>$1,000</p>
+        <div className={styles.totals}>
+          <div className={styles.total}>
+            <h2>Total Planned Expenses</h2>
+            <p>$1,000</p>
+          </div>
+          <div className={styles.total}>
+            <h2>Total Remaining Expenses</h2>
+            <p>$1,000</p>
+          </div>
         </div>
       </div>
 
