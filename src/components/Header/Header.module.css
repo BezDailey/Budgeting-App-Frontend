@@ -1,0 +1,89 @@
+:local(.header) {
+  background-color: var(--primary-green);
+  margin: 0;
+  padding: 0;
+  width: 95%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+:local(h1) {
+  margin: 0;
+  padding: 0;
+}
+
+:local(.userName) {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+:local(.totals h2) {
+  color: var(--secondary-text-color);
+  margin: 0;
+  padding: 0;
+}
+
+:local(.totals p) {
+  margin: 0;
+  padding: 0;
+  font-weight: lighter;
+}
+
+:local(.totals) {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+:local(.hamburgerIcon) {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  outline: none;
+}
+
+:local(.mobileMenu) {
+  position: fixed;
+  width: 75%;
+  min-height: 100vh;
+  top: 0;
+  right: 0;
+  background: var(--secondary-background-color);
+  z-index: 1000;
+}
+
+:local(ul) {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+:local(.closeMenuIcon) {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  outline: none;
+  text-align: right;
+  margin-right: 1rem;
+  width: calc(100% - 1rem);
+  font-weight: var(--font-extra-bold);
+}
+
+:local(li) {
+  font-weight: var(--font-medium);
+}
+
+:local(.active) {
+  font-weight: var(--font-semi-bold);
+  color: var(--primary-green);
+}
