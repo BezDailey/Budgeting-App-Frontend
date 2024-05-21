@@ -44,7 +44,7 @@ body {
 /* Medium Devices (Desktops, >= 768px) */
 @media (min-width: 768px) {
   body {
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     font-size: 20px;
   }
