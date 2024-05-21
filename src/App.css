@@ -53,7 +53,7 @@ body {
 /* Large Devices (Large Desktops, >= 992px) */
 @media (min-width: 992px) {
   body {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     font-size: 22px;
   }
