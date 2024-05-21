@@ -72,6 +72,7 @@
   border: none;
   cursor: pointer;
   padding: 0;
+  margin: 0;
   outline: none;
   text-align: right;
   margin-right: 1rem;
@@ -79,13 +80,28 @@
   font-weight: var(--font-extra-bold);
 }
 
+:local(.closeMenuIcon h2) {
+  margin: 0;
+  margin-top: .5rem;
+  font-size: 24px;
+}
+
 :local(li) {
   font-weight: var(--font-medium);
+  font-size: 1.5rem;
+}
+
+:local(li a) {
+  all: unset;
 }
 
 :local(.active) {
   font-weight: var(--font-semi-bold);
   color: var(--primary-green);
+}
+
+:local(.menu) {
+  display: none;
 }
 
 /* Small Devices (Tablets, >= 576px) */
@@ -105,9 +121,13 @@
   }
 
   :local(.userName) {
-    font-size: 24px;
     padding: 0;
     margin: 0;
+    padding-top: 10px;
+  }
+
+  :local(.userName h1) {
+    font-size: 24px;
   }
 
   :local(.totals) {
@@ -126,4 +146,26 @@
     padding: 0;
     margin: 0;
   }
+
+  :local(.menu) {
+    display: block;
+    width: 95%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    background-color: var(--secondary-background-color);
+  }
+
+  :local(.menu ul) {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    margin: 0;
+  }
+
+  :local(.menu ul li) {
+    font-size: 16px;
+  }
+
 }
