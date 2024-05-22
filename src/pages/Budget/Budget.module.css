@@ -32,7 +32,7 @@
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-size: var(--font-light)
+  font-weight: var(--font-normal)
 }
 
 :local(.envelope p) {
@@ -87,3 +87,58 @@
 :local(.transactions .transaction:nth-child(2n)) {
   background-color: var(--background-color)
 }
+
+:local(.greenBtn) {
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary-green);
+  color: white;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0 10px;
+  font-size: 10px;
+  height: 20px;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+:local(.sectionHeaderContainer) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+:local(.btnContainer) {
+  display: flex;
+  flex-direction: row;
+  gap: .5rem;
+  text-align: bottom;
+  font-size: 13px;
+}
+
+/* Extra Small Devices (Phones, < 576px) */
+@media (max-width: 575.98px) {}
+
+/* Small Devices (Tablets, >= 576px) */
+@media (min-width: 576px) {}
+
+/* Medium Devices (Desktops, >= 768px) */
+@media (min-width: 768px) {
+  :local(main) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  :local(.section) {
+    width: 100%;
+  }
+}
+
+/* Large Devices (Large Desktops, >= 992px) */
+@media (min-width: 992px) {}
+
+/* Extra Large Devices (Desktops, >= 1200px) */
+@media (min-width: 1200px) {}
+
+/* Extra Extra Large Devices (Extra Extra Large Desktops, >= 1400px) */
+@media (min-width: 1400px) {}

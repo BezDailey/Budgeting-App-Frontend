@@ -169,3 +169,39 @@
   }
 
 }
+
+/* Medium Devices (Desktops, >= 768px) */
+@media (min-width: 768px) {
+  :local(.header) {
+    height: 74px;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    align-items: center;
+  }
+
+  :local(h1) {
+    font-size: 24px;
+    align-self: baseline;
+  }
+
+  :local(h2) {
+    font-size: 16px;
+  }
+
+  :local(p) {
+    font-size: 14px;
+  }
+
+  :local(.userName) {
+    padding-top: 18px;
+  }
+}
+
+/* Large Devices (Large Desktops, >= 992px) */
+@media (min-width: 992px) {}
+
+/* Extra Large Devices (Desktops, >= 1200px) */
+@media (min-width: 1200px) {}
+
+/* Extra Extra Large Devices (Extra Extra Large Desktops, >= 1400px) */
+@media (min-width: 1400px) {}

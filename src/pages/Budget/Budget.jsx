@@ -5,7 +5,10 @@ const Budget = ({ }) => {
   return (
     <main>
       <div className={styles.section}>
-        <h1 className={styles.sectionHeader}>Envelopes</h1>
+        <div className={styles.sectionHeaderContainer}>
+          <h1 className={styles.sectionHeader}>Envelopes</h1>
+          <button className={styles.greenBtn}>edit</button>
+        </div>
         <div className={styles.envelopes}>
           <div className={styles.envelope}>
             <h2>Needs</h2>
@@ -22,7 +25,13 @@ const Budget = ({ }) => {
         </div>
       </div>
       <div className={styles.section}>
-        <h1 className={styles.sectionHeader}>Transactions</h1>
+        <div className={styles.sectionHeaderContainer}>
+          <h1 className={styles.sectionHeader}>Transactions</h1>
+          <div className={styles.btnContainer}>
+            <button className={styles.greenBtn}>add transaction</button>
+            <button className={styles.greenBtn}>edit</button>
+          </div>
+        </div>
         <div className={styles.transactions}>
           <div className={styles.transaction}>
             <div className={styles.transactionLeft}>

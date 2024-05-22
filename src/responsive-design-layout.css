@@ -1,0 +1,17 @@
+/* Extra Small Devices (Phones, < 576px) */
+@media (max-width: 575.98px) {}
+
+/* Small Devices (Tablets, >= 576px) */
+@media (min-width: 576px) {}
+
+/* Medium Devices (Desktops, >= 768px) */
+@media (min-width: 768px) {}
+
+/* Large Devices (Large Desktops, >= 992px) */
+@media (min-width: 992px) {}
+
+/* Extra Large Devices (Desktops, >= 1200px) */
+@media (min-width: 1200px) {}
+
+/* Extra Extra Large Devices (Extra Extra Large Desktops, >= 1400px) */
+@media (min-width: 1400px) {}
