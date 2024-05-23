@@ -1,13 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
+import EditEnvelopeForm from "../../components/EditEnvelopesForm/EditEnvelopesForm";
+import GreenBtn from "../../components/Btns/GreenBtn/GreenBtn";
 import styles from "./Budget.module.css";
 
 const Budget = ({ }) => {
+  const [showEditEnvelopesForm, setShowEditEnvelopesForm] = useState(false);
+
+  const handleEnvelopeEditBtnClick = () => {
+    setShowEditEnvelopesForm(true);
+  };
+
+  const handleEnvelopeEditCloseBtnClick = () => {
+    setShowEditEnvelopesForm(false);
+  };
+
   return (
     <main>
+      {showEditEnvelopesForm && <EditEnvelopeForm onCloseBtnClick={handleEnvelopeEditCloseBtnClick} />}
       <div className={styles.section}>
         <div className={styles.sectionHeaderContainer}>
           <h1 className={styles.sectionHeader}>Envelopes</h1>
-          <button className={styles.greenBtn}>edit</button>
+          <GreenBtn onBtnClick={handleEnvelopeEditBtnClick} text="edit" />
         </div>
         <div className={styles.envelopes}>
           <div className={styles.envelope}>
@@ -28,8 +41,8 @@ const Budget = ({ }) => {
         <div className={styles.sectionHeaderContainer}>
           <h1 className={styles.sectionHeader}>Transactions</h1>
           <div className={styles.btnContainer}>
-            <button className={styles.greenBtn}>add transaction</button>
-            <button className={styles.greenBtn}>edit</button>
+            <GreenBtn text="add transaction" />
+            <GreenBtn text="edit" />
           </div>
         </div>
         <div className={styles.transactions}>

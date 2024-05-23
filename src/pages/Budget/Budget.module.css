@@ -88,20 +88,6 @@
   background-color: var(--background-color)
 }
 
-:local(.greenBtn) {
-  border: none;
-  border-radius: 5px;
-  background-color: var(--primary-green);
-  color: white;
-  font-family: 'Poppins', Arial, Helvetica, sans-serif;
-  margin: 0;
-  padding: 0 10px;
-  font-size: 10px;
-  height: 20px;
-  align-self: flex-end;
-  cursor: pointer;
-}
-
 :local(.sectionHeaderContainer) {
   display: flex;
   flex-direction: row;
