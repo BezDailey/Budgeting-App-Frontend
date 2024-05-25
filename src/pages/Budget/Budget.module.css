@@ -12,7 +12,7 @@
 
 :local(.sectionHeader) {
   font-weight: var(--font-bold);
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 :local(.envelopes) {
