@@ -83,7 +83,7 @@
 :local(.closeMenuIcon h2) {
   margin: 0;
   margin-top: .5rem;
-  font-size: 24px;
+  font-size: 1rem;
 }
 
 :local(li) {
@@ -127,7 +127,7 @@
   }
 
   :local(.userName h1) {
-    font-size: 24px;
+    font-size: 2rem;
   }
 
   :local(.totals) {
@@ -180,16 +180,16 @@
   }
 
   :local(h1) {
-    font-size: 24px;
+    font-size: 1rem;
     align-self: baseline;
   }
 
   :local(h2) {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   :local(p) {
-    font-size: 14px;
+    font-size: 1rem;
   }
 
   :local(.userName) {
